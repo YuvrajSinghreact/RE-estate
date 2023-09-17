@@ -1,0 +1,141 @@
+.about{
+	width:100%;
+	background-color:#dadada;
+	box-sizing: border-box;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	padding: 50px 5% 50px 5%;
+	position: relative;
+
+    @media(max-width: 1100px){
+        padding: 50px 20px;
+    }
+
+    @media(max-width:970px){
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .about-model {
+        img{
+            height: 400px;
+
+            @media(max-width: 600px){
+                height: 300px;
+            }
+
+            @media(max-width: 500px){
+                height: 250px;
+            }
+
+            @media(max-width: 400px){
+                height: 200px;
+            }
+        }
+    }
+
+    .about-text{
+        width: 50%;
+
+        @media(max-width: 1100px){
+            margin-left: 20px;
+        }
+
+        @media(max-width:970px){
+            width: 90%;
+            margin-left: 0;
+        }
+    
+        h2{
+            font-size: 2rem;
+            color:#1100ff;
+            font-weight: 800;
+            margin: 0px;
+            padding: 0px;
+            
+
+            @media(max-width: 970px){
+                font-size: 4rem;
+            }
+
+            @media(max-width: 860px){
+                font-size: 3rem;
+            }
+
+            @media(max-width: 600px){
+                font-size: 2rem;
+            }
+
+            @media(max-width: 500px){
+                font-size: 1.5rem;
+            }
+
+            @media(max-width: 400px){
+                font-size: 1.2rem;
+            }
+        }
+        
+        h3{
+            font-size: 1.1rem;
+            color:#000000;
+            font-weight: 800;
+            margin: 0px;
+            padding: 0px;
+            
+
+            @media(max-width: 970px){
+                font-size: 4rem;
+            }
+
+            @media(max-width: 860px){
+                font-size: 3rem;
+            }
+
+            @media(max-width: 600px){
+                font-size: 2rem;
+            }
+
+            @media(max-width: 500px){
+                font-size: 1.5rem;
+            }
+
+            @media(max-width: 400px){
+                font-size: 1.2rem;
+            }
+        }
+        
+        p{
+            font-size: 1.2rem;
+            color:#3a3a3a;
+            margin: 20px 0;
+            
+            @media(max-width: 500px){
+                font-size: 1rem;
+            }
+
+            @media(max-width: 400px){
+                font-size: .8rem;
+            }
+        }
+
+        button{
+            width: 140px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            background-color:#236c7e;
+    
+            &:hover{
+                background-color: #04afda;
+                transition: all ease 0.3s;
+                color: #ffffff;
+                box-shadow: 5px 0px 30px rgba(2, 154, 255, 0.39);
+            }
+        }
+    }    
+}

@@ -1,0 +1,66 @@
+.propartybox {
+	width:350px;
+	height: 420px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 12px;
+	position: relative;
+	margin: 20px 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+
+    img {
+        height:150px;
+    }
+
+    p {
+        color:#4d4d4d70;
+        font-family: myriad pro;
+        font-size: 0.9rem;
+        letter-spacing: 0.5;
+    }
+
+    .price {
+        color:#2c2c2c;
+        font-family: poppins;
+        font-size: 2rem;;
+    }
+
+    .buy{
+        position: absolute;
+        width:140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:calibri;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+        background:linear-gradient(120deg,#064757 20%,#04afda);
+        color:#FFFFFF;
+        display: none;
+        animation: fade 0.2s;
+    }
+
+  
+        }
+
+        .price{
+            color:#04afda;
+            transition: all ease 0.2s;
+        }
+    
+
+ 
+@keyframes fade {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}

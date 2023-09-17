@@ -1,0 +1,69 @@
+.agentbox{
+    background-color: #c4c4c4;
+    width:350px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    position: relative;
+
+    @media(max-width:1190px){
+        flex-grow: 1;
+    }
+
+    .agentbox-img {
+        width: 100%;
+        height: 80%;
+    
+        img{
+            width:100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .agentbox-text {
+        
+        width: 100%;
+        height: 16%;
+        
+        background-color:#ffffff;
+        display:contents;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        &:hover{
+            transform:translateY(-10px);
+            transition: all ease 0.3s;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .agent-btn{
+        width:110px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #236c7e;
+        box-shadow: 5px 10px 30px rgba(2, 82, 255, 0.137);
+        border-radius: 10px;
+        color:#ffffff;
+
+        &:hover{
+            background-color: #04afda;
+            transition: all ease 0.5s;
+            color: #ffffff;
+            box-shadow: 5px 0px 30px rgba(2, 154, 255, 0.39);
+        }
+    }
+}
+
+
+
